@@ -1962,7 +1962,7 @@ INSERT INTO `{install:prefix}language` (`key`,`value`,`category`) VALUES
 ('screenshot','Screenshot','admin'),
 ('script_upgraded','Your script has been automatically upgraded to version :version.','admin'),
 ('search_in_phrases','Search in Phrases','admin'),
-('section','Search section','admin'),
+('card','Search card','admin'),
 ('select_all','Select all','admin'),
 ('select_all_in_tab','Select all in this tab','admin'),
 ('select_none','Select None','admin'),

@@ -201,7 +201,7 @@ class Smarty_Internal_Config
     /**
      * load config variables
      *
-     * @param mixed         $sections array of section names, single section or null
+     * @param mixed         $sections array of card names, single card or null
      * @param string $scope    global,parent or local
      *
      * @throws Exception

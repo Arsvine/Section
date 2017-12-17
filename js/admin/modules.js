@@ -380,7 +380,7 @@ var synchronizeAdminMenu = function (currentPage, extensionGroups) {
 
             if (typeof extensionGroups !== 'undefined') {
                 $.each(extensionGroups, function (i, val) {
-                    $('#menu-section-' + val + ' a').append('<span class="menu-updated animated bounceIn"></span>');
+                    $('#menu-card-' + val + ' a').append('<span class="menu-updated animated bounceIn"></span>');
                 });
             }
 

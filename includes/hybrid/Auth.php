@@ -46,7 +46,7 @@ class Hybrid_Auth {
 	 *
 	 * Hybrid_Auth constructor will require either a valid config array or
 	 * a path for a configuration file as parameter. To know more please
-	 * refer to the Configuration section:
+	 * refer to the Configuration card:
 	 * http://hybridauth.sourceforge.net/userguide/Configuration.html
 	 *
 	 * @param array $config Configuration array or path to a configratuion file

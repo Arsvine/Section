@@ -204,7 +204,7 @@
 	 * **Note:** Plugin names are always lower case, while widget names are not, so widget names do not have to equal plugin names.
 	 * For example, there is the `embedsemantic` plugin and the `embedSemantic` widget.
 	 *
-	 * Read more in the [documentation](#!/guide/dev_media_embed-section-automatic-embedding-on-paste)
+	 * Read more in the [documentation](#!/guide/dev_media_embed-card-automatic-embedding-on-paste)
 	 * and see the [SDK sample](http://sdk.ckeditor.com/samples/mediaembed.html).
 	 *
 	 * @since 4.5

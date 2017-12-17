@@ -285,7 +285,7 @@ class Smarty_Internal_Data
      * load a config file, optionally load just selected sections
      *
      * @param  string $config_file filename
-     * @param  mixed  $sections    array of section names, single section or null
+     * @param  mixed  $sections    array of card names, single card or null
      *
      * @return Smarty_Internal_Data current Smarty_Internal_Data (or Smarty or Smarty_Internal_Template) instance for chaining
      */

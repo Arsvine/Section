@@ -219,7 +219,7 @@ class _smarty_dq_content extends _smarty_parsetree
      * Create parse tree buffer with string content
      *
      * @param object $parser parser object
-     * @param string $data   string section
+     * @param string $data   string card
      */
     public function __construct($parser, $data)
     {

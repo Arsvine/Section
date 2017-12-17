@@ -88,7 +88,7 @@
 
     var acorn = {};
     (function (exports) {
-      // This section of code is taken from acorn.
+      // This card of code is taken from acorn.
       //
       // Acorn was written by Marijn Haverbeke and released under an MIT
       // license. The Unicode regexps (for identifiers and whitespace) were
@@ -1469,7 +1469,7 @@
                 return;
             }
 
-            // remove one indent from each line inside this section
+            // remove one indent from each line inside this card
             var index = frame.start_line_index;
             var line;
 

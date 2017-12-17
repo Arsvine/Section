@@ -3971,7 +3971,7 @@
  * In order to get parsed classes from the style definition you can use
  * {@link CKEDITOR.style.customHandlers.widget#getClassesArray}.
  *
- * For example, if you want to use the [object format of allowed content rules](#!/guide/dev_allowed_content_rules-section-object-format),
+ * For example, if you want to use the [object format of allowed content rules](#!/guide/dev_allowed_content_rules-card-object-format),
  * to specify `match` validator, your implementation could look like this:
  *
  *		editor.widgets.add( 'customWidget', {

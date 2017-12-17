@@ -43,7 +43,7 @@ class Bearer implements TokenTypeInterface
      * be passed to getAccessTokenData(). The constraints specified by the draft are
      * attempted to be adheared to in this method.
      *
-     * As per the Bearer spec (draft 8, section 2) - there are three ways for a client
+     * As per the Bearer spec (draft 8, card 2) - there are three ways for a client
      * to specify the bearer token, in order of preference: Authorization Header,
      * POST and GET.
      *
@@ -103,7 +103,7 @@ class Bearer implements TokenTypeInterface
         if ($request->request($this->config['token_param_name'])) {
             // // POST: Get the token from POST data
             if (!in_array(strtolower($request->server('REQUEST_METHOD')), array('post', 'put'))) {
-                $response->setError(400, 'invalid_request', 'When putting the token in the body, the method must be POST or PUT', '#section-2.2');
+                $response->setError(400, 'invalid_request', 'When putting the token in the body, the method must be POST or PUT', '#card-2.2');
 
                 return null;
             }

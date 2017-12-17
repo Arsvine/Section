@@ -559,7 +559,7 @@ class GifFrameExtractor
     }
     
     /**
-     * Get a section of the data from $start to $start + $length (old: datapart)
+     * Get a card of the data from $start to $start + $length (old: datapart)
      *
      * @param integer $start
      * @param integer $length

@@ -10,9 +10,9 @@
 * SAXY is Free Software
 **/
 
-/** the initial characters of a cdata section */
+/** the initial characters of a cdata card */
 define('SAXY_SEARCH_CDATA', '![CDATA[');
-/** the length of the initial characters of a cdata section */
+/** the length of the initial characters of a cdata card */
 define('SAXY_CDATA_LEN', 8);
 /** the initial characters of a notation */
 define('SAXY_SEARCH_NOTATION', '!NOTATION');

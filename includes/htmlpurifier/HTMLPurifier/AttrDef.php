@@ -52,7 +52,7 @@ abstract class HTMLPurifier_AttrDef
      *       already been removed by HTMLPurifier_Encoder.
      *
      * @warning This processing is inconsistent with XML's whitespace handling
-     *          as specified by section 3.3.3 and referenced XHTML 1.0 section
+     *          as specified by card 3.3.3 and referenced XHTML 1.0 card
      *          4.7.  However, note that we are NOT necessarily
      *          parsing XML, thus, this behavior may still be correct. We
      *          assume that newlines have been normalized.

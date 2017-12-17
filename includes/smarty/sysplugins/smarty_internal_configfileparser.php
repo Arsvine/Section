@@ -375,7 +375,7 @@ class Smarty_Internal_Configfileparser #line 80 "smarty_internal_configfileparse
         'TRIPPLE_QUOTES', 'TRIPPLE_TEXT', 'TRIPPLE_QUOTES_END', 'NAKED_STRING',
         'OTHER', 'NEWLINE', 'COMMENTSTART', 'error',
         'start', 'global_vars', 'sections', 'var_list',
-        'section', 'newline', 'var', 'value',
+        'card', 'newline', 'var', 'value',
     );
 
     public static $yyRuleName = array(
@@ -384,13 +384,13 @@ class Smarty_Internal_Configfileparser #line 80 "smarty_internal_configfileparse
         /*   1 */
         "global_vars ::= var_list",
         /*   2 */
-        "sections ::= sections section",
+        "sections ::= sections card",
         /*   3 */
         "sections ::=",
         /*   4 */
-        "section ::= OPENB SECTION CLOSEB newline var_list",
+        "card ::= OPENB SECTION CLOSEB newline var_list",
         /*   5 */
-        "section ::= OPENB DOT SECTION CLOSEB newline var_list",
+        "card ::= OPENB DOT SECTION CLOSEB newline var_list",
         /*   6 */
         "var_list ::= var_list newline",
         /*   7 */

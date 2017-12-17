@@ -1271,7 +1271,7 @@ class iaModule extends abstractCore
         $this->_attributes = $attributes;
         $this->_currentPath[] = $name;
 
-        if ('section' == $this->_inTag && isset($attributes['name'])) {
+        if ('card' == $this->_inTag && isset($attributes['name'])) {
             $this->_section = $attributes['name'];
         }
 
@@ -1750,7 +1750,7 @@ class iaModule extends abstractCore
                 break;
 
             case 'position':
-                if ($this->_checkPath('section')) {
+                if ($this->_checkPath('card')) {
                     $this->itemData['layout'][$this->_section][$text] = [
                         'width' => (int)$this->_attr('width', 3),
                         'fixed' => (bool)$this->_attr('fixed', false)

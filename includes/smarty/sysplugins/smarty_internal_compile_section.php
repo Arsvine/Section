@@ -1,7 +1,7 @@
 <?php
 /**
  * Smarty Internal Plugin Compile Section
- * Compiles the {section} {sectionelse} {/section} tags
+ * Compiles the {card} {sectionelse} {/card} tags
  *
  * @package    Smarty
  * @subpackage Compiler
@@ -39,7 +39,7 @@ class Smarty_Internal_Compile_Section extends Smarty_Internal_CompileBase
     public $optional_attributes = array('start', 'step', 'max', 'show');
 
     /**
-     * Compiles code for the {section} tag
+     * Compiles code for the {card} tag
      *
      * @param  array  $args     array with attributes from parser
      * @param  object $compiler compiler object
@@ -51,7 +51,7 @@ class Smarty_Internal_Compile_Section extends Smarty_Internal_CompileBase
         // check and get attributes
         $_attr = $this->getAttributes($compiler, $args);
 
-        $this->openTag($compiler, 'section', array('section', $compiler->nocache));
+        $this->openTag($compiler, 'card', array('card', $compiler->nocache));
         // maybe nocache because of nocache variables
         $compiler->nocache = $compiler->nocache | $compiler->tag_nocache;
 
@@ -59,8 +59,8 @@ class Smarty_Internal_Compile_Section extends Smarty_Internal_CompileBase
 
         $section_name = $_attr['name'];
 
-        $output .= "if (isset(\$_smarty_tpl->tpl_vars['smarty']->value['section'][$section_name])) unset(\$_smarty_tpl->tpl_vars['smarty']->value['section'][$section_name]);\n";
-        $section_props = "\$_smarty_tpl->tpl_vars['smarty']->value['section'][$section_name]";
+        $output .= "if (isset(\$_smarty_tpl->tpl_vars['smarty']->value['card'][$section_name])) unset(\$_smarty_tpl->tpl_vars['smarty']->value['card'][$section_name]);\n";
+        $section_props = "\$_smarty_tpl->tpl_vars['smarty']->value['card'][$section_name]";
 
         foreach ($_attr as $attr_name => $attr_value) {
             switch ($attr_name) {
@@ -162,7 +162,7 @@ class Smarty_Internal_Compile_Sectionelse extends Smarty_Internal_CompileBase
         // check and get attributes
         $_attr = $this->getAttributes($compiler, $args);
 
-        list($openTag, $nocache) = $this->closeTag($compiler, array('section'));
+        list($openTag, $nocache) = $this->closeTag($compiler, array('card'));
         $this->openTag($compiler, 'sectionelse', array('sectionelse', $nocache));
 
         return "<?php endfor; else: ?>";
@@ -178,7 +178,7 @@ class Smarty_Internal_Compile_Sectionelse extends Smarty_Internal_CompileBase
 class Smarty_Internal_Compile_Sectionclose extends Smarty_Internal_CompileBase
 {
     /**
-     * Compiles code for the {/section} tag
+     * Compiles code for the {/card} tag
      *
      * @param  array  $args     array with attributes from parser
      * @param  object $compiler compiler object
@@ -195,7 +195,7 @@ class Smarty_Internal_Compile_Sectionclose extends Smarty_Internal_CompileBase
             $compiler->tag_nocache = true;
         }
 
-        list($openTag, $compiler->nocache) = $this->closeTag($compiler, array('section', 'sectionelse'));
+        list($openTag, $compiler->nocache) = $this->closeTag($compiler, array('card', 'sectionelse'));
 
         if ($openTag == 'sectionelse') {
             return "<?php endif; ?>";

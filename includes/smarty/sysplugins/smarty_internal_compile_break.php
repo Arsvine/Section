@@ -42,7 +42,7 @@ class Smarty_Internal_Compile_Break extends Smarty_Internal_CompileBase
      */
     public function compile($args, $compiler, $parameter)
     {
-        static $_is_loopy = array('for' => true, 'foreach' => true, 'while' => true, 'section' => true);
+        static $_is_loopy = array('for' => true, 'foreach' => true, 'while' => true, 'card' => true);
         // check and get attributes
         $_attr = $this->getAttributes($compiler, $args);
 

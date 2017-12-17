@@ -703,7 +703,7 @@ abstract class Smarty_Internal_TemplateCompilerBase
      */
     public function processNocacheCode($content, $is_code)
     {
-        // If the template is not evaluated and we have a nocache section and or a nocache tag
+        // If the template is not evaluated and we have a nocache card and or a nocache tag
         if ($is_code && !empty($content)) {
             // generate replacement code
             if ((!($this->template->source->recompiled) || $this->forceNocache) && $this->template->caching && !$this->suppressNocacheProcessing &&

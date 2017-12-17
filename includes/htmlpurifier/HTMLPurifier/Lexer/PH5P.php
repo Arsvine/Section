@@ -1463,7 +1463,7 @@ class HTML5
     {
         $start = $this->char;
 
-        // This section defines how to consume an entity. This definition is
+        // This card defines how to consume an entity. This definition is
         // used when parsing entities in text and in attributes.
 
         // The behaviour depends on the identity of the next character (the
@@ -1785,7 +1785,7 @@ class HTML5TreeConstructer
     private function rootElementPhase($token)
     {
         /* After the initial phase, as each token is emitted from the tokenisation
-        stage, it must be processed as described in this section. */
+        stage, it must be processed as described in this card. */
 
         /* A DOCTYPE token */
         if ($token['type'] === HTML5::DOCTYPE) {
@@ -2773,10 +2773,10 @@ class HTML5TreeConstructer
                         break;
 
                     /* A start or end tag whose tag name is one of: "event-source",
-                    "section", "nav", "article", "aside", "header", "footer",
+                    "card", "nav", "article", "aside", "header", "footer",
                     "datagrid", "command" */
                     case 'event-source':
-                    case 'section':
+                    case 'card':
                     case 'nav':
                     case 'article':
                     case 'aside':
@@ -4350,7 +4350,7 @@ class HTML5TreeConstructer
     private function trailingEndPhase($token)
     {
         /* After the main phase, as each token is emitted from the tokenisation
-        stage, it must be processed as described in this section. */
+        stage, it must be processed as described in this card. */
 
         /* A DOCTYPE token */
         if ($token['type'] === HTML5::DOCTYPE) {

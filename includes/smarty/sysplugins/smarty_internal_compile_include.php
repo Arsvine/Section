@@ -95,7 +95,7 @@ class Smarty_Internal_Compile_Include extends Smarty_Internal_CompileBase
         /*
         * if the {include} tag provides individual parameter for caching
         * it will not be included into the common cache file and treated like
-        * a nocache section
+        * a nocache card
         */
         if (isset($_attr['cache_lifetime'])) {
             $_cache_lifetime = $_attr['cache_lifetime'];

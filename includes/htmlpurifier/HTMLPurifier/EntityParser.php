@@ -108,7 +108,7 @@ class HTMLPurifier_EntityParser
      * Substitutes only special entities with their parsed equivalents.
      *
      * @notice We try to avoid calling this function because otherwise, it
-     * would have to be called a lot (for every parsed section).
+     * would have to be called a lot (for every parsed card).
      *
      * @param string $string String to have non-special entities parsed.
      * @return string Parsed string.

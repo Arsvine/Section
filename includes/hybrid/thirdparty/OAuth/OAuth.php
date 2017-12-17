@@ -59,7 +59,7 @@ class OAuthToken {
 
 /**
  * A class for implementing a Signature Method
- * See section 9 ("Signing Requests") in the spec
+ * See card 9 ("Signing Requests") in the spec
  */
 abstract class OAuthSignatureMethod {
   /**
@@ -173,7 +173,7 @@ class OAuthSignatureMethod_PLAINTEXT extends OAuthSignatureMethod {
 
 /**
  * The RSA-SHA1 signature method uses the RSASSA-PKCS1-v1_5 signature algorithm as defined in 
- * [RFC3447] section 8.2 (more simply known as PKCS#1), using SHA-1 as the hash function for 
+ * [RFC3447] card 8.2 (more simply known as PKCS#1), using SHA-1 as the hash function for
  * EMSA-PKCS1-v1_5. It is assumed that the Consumer has provided its RSA public key in a 
  * verified way to the Service Provider, in a manner which is beyond the scope of this 
  * specification.

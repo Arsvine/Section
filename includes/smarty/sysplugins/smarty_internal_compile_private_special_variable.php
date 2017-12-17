@@ -33,7 +33,7 @@ class Smarty_Internal_Compile_Private_Special_Variable extends Smarty_Internal_C
         switch ($variable) {
             case 'foreach':
                 return "\$_smarty_tpl->getVariable('smarty')->value$parameter";
-            case 'section':
+            case 'card':
                 return "\$_smarty_tpl->getVariable('smarty')->value$parameter";
             case 'capture':
                 return "Smarty::\$_smarty_vars$parameter";

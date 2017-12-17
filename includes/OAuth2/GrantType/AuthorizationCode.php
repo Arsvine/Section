@@ -50,7 +50,7 @@ class AuthorizationCode implements GrantTypeInterface
          */
         if (isset($authCode['redirect_uri']) && $authCode['redirect_uri']) {
             if (!$request->request('redirect_uri') || urldecode($request->request('redirect_uri')) != $authCode['redirect_uri']) {
-                $response->setError(400, 'redirect_uri_mismatch', "The redirect URI is missing or do not match", "#section-4.1.3");
+                $response->setError(400, 'redirect_uri_mismatch', "The redirect URI is missing or do not match", "#card-4.1.3");
 
                 return false;
             }

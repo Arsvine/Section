@@ -4023,13 +4023,13 @@ class Smarty_Internal_Templateparser #line 80 "smarty_internal_templateparser.ph
     #line 887 "smarty_internal_templateparser.y"
     function yy_r138()
     {
-        $this->_retvalue = '[' . $this->compiler->compileTag('private_special_variable', array(), '[\'section\'][\'' . $this->yystack[$this->yyidx + - 1]->minor . '\'][\'index\']') . ']';
+        $this->_retvalue = '[' . $this->compiler->compileTag('private_special_variable', array(), '[\'card\'][\'' . $this->yystack[$this->yyidx + - 1]->minor . '\'][\'index\']') . ']';
     }
     #line 2775 "smarty_internal_templateparser.php"
     #line 891 "smarty_internal_templateparser.y"
     function yy_r139()
     {
-        $this->_retvalue = '[' . $this->compiler->compileTag('private_special_variable', array(), '[\'section\'][\'' . $this->yystack[$this->yyidx + - 3]->minor . '\'][\'' . $this->yystack[$this->yyidx + - 1]->minor . '\']') . ']';
+        $this->_retvalue = '[' . $this->compiler->compileTag('private_special_variable', array(), '[\'card\'][\'' . $this->yystack[$this->yyidx + - 3]->minor . '\'][\'' . $this->yystack[$this->yyidx + - 1]->minor . '\']') . ']';
     }
     #line 2780 "smarty_internal_templateparser.php"
     #line 901 "smarty_internal_templateparser.y"

@@ -185,7 +185,7 @@ class iaPatchParser
     protected function _parseSectionFiles()
     {
         if (!isset($this->patch['info']['num_files'])) {
-            $this->_error('GLOBAL_INFO section is not initialised.');
+            $this->_error('GLOBAL_INFO card is not initialised.');
         }
         if (!$this->patch['info']['num_files']) {
             return false;
@@ -233,7 +233,7 @@ class iaPatchParser
     protected function _parseSectionQueries()
     {
         if (!isset($this->patch['info']['num_queries'])) {
-            $this->_error('GLOBAL_INFO section is not initialised');
+            $this->_error('GLOBAL_INFO card is not initialised');
         }
         if (!$this->patch['info']['num_queries']) {
             return false;

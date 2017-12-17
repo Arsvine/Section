@@ -331,7 +331,7 @@ class iaSmarty extends Smarty
             $iaView->add_css(explode(',', $params['files']), isset($params['order']) ? $params['order'] : null);
         }
 
-        // special case: resources marked to inclusion, but the HEAD html section is already rendered.
+        // special case: resources marked to inclusion, but the HEAD html card is already rendered.
         // currently just print out the call directly into html body
         // TODO: check if a call of this resource was already printed out
         if ($iaView->get(self::FLAG_CSS_RENDERED)) {
@@ -837,14 +837,14 @@ class iaSmarty extends Smarty
     public static function width(array $params, Smarty_Internal_Template &$smarty)
     {
         $position = isset($params['position']) ? $params['position'] : 'center';
-        $section = isset($params['section']) ? $params['section'] : 'content';
+        $section = isset($params['card']) ? $params['card'] : 'content';
 
         $iaCore = iaCore::instance();
 
         $layoutData = $iaCore->get('tmpl_layout_data');
         $layoutData = empty($layoutData) ? [] : unserialize($layoutData);
 
-        // pre-compilation of section's positions
+        // pre-compilation of card's positions
         if (isset($layoutData[$section])) {
             foreach ($layoutData[$section] as $positionName => $options) {
                 if (!isset(self::$_positionsContent[$positionName])) {

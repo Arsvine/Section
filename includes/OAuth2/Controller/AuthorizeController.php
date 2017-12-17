@@ -160,7 +160,7 @@ class AuthorizeController implements AuthorizeControllerInterface
 
             // validate against the registered redirect uri(s) if available
             if ($registered_redirect_uri && !$this->validateRedirectUri($supplied_redirect_uri, $registered_redirect_uri)) {
-                $response->setError(400, 'redirect_uri_mismatch', 'The redirect URI provided is missing or does not match', '#section-3.1.2');
+                $response->setError(400, 'redirect_uri_mismatch', 'The redirect URI provided is missing or does not match', '#card-3.1.2');
 
                 return false;
             }
@@ -174,7 +174,7 @@ class AuthorizeController implements AuthorizeControllerInterface
             }
 
             if (count(explode(' ', $registered_redirect_uri)) > 1) {
-                $response->setError(400, 'invalid_uri', 'A redirect URI must be supplied when multiple redirect URIs are registered', '#section-3.1.2.3');
+                $response->setError(400, 'invalid_uri', 'A redirect URI must be supplied when multiple redirect URIs are registered', '#card-3.1.2.3');
 
                 return false;
             }

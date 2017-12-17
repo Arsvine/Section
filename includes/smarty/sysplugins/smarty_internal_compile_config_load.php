@@ -29,14 +29,14 @@ class Smarty_Internal_Compile_Config_Load extends Smarty_Internal_CompileBase
      * @var array
      * @see Smarty_Internal_CompileBase
      */
-    public $shorttag_order = array('file', 'section');
+    public $shorttag_order = array('file', 'card');
     /**
      * Attribute definition: Overwrites base class.
      *
      * @var array
      * @see Smarty_Internal_CompileBase
      */
-    public $optional_attributes = array('section', 'scope');
+    public $optional_attributes = array('card', 'scope');
 
     /**
      * Compiles code for the {config_load} tag
@@ -58,8 +58,8 @@ class Smarty_Internal_Compile_Config_Load extends Smarty_Internal_CompileBase
 
         // save possible attributes
         $conf_file = $_attr['file'];
-        if (isset($_attr['section'])) {
-            $section = $_attr['section'];
+        if (isset($_attr['card'])) {
+            $section = $_attr['card'];
         } else {
             $section = 'null';
         }
